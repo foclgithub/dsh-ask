@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "DSH Ask Terminal",
+    "description": "Serves a loopback-only endpoint so the dsh-ask command can prompt this running Harness and print the answer; the language option in the plugin settings decides dsh-ask's interface language."
+  }
+}

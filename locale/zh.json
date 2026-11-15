@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "DSH Ask 终端",
+    "description": "在回环地址上开放一个端点，让 dsh-ask 命令可以直接向这个正在运行的 Harness 提问并打印回答；插件设置里的语言选项决定 dsh-ask 的界面语言。"
+  }
+}

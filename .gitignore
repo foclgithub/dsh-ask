@@ -1,0 +1,68 @@
+# 本仓库只发布源码、测试和构建脚本；以下本地产物不进入版本库。
+
+# 原生构建缓存与预编译产物（从源码重新构建，避免提交本机二进制）
+target/
+**/target/
+native/target/
+native/target/**
+native/bin/
+native/bin/**
+
+# 如果误把 DSH_HOME 指向仓库，运行时会在这里写 endpoint/token
+.dsh/
+local-cli/
+local-cli/token
+local-cli/endpoint
+
+# Node.js 依赖
+node_modules/
+.pnpm-store/
+.yarn/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# 凭据与本机配置（仓库里不应出现这些文件）
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa*
+id_ed25519*
+.credentials*
+secrets*
+
+# 备份、日志、崩溃转储与临时产物
+*.bak*
+*.orig
+*.rej
+*.log
+logs/
+*.dmp
+core
+core.*
+*.tmp
+*.tmp.*
+*.swp
+*.swo
+*~
+.Trash/
+
+# 编辑器与系统垃圾
+.DS_Store
+._*
+Thumbs.db
+desktop.ini
+__MACOSX/
+.idea/
+.vscode/
+
+# 测试/覆盖率缓存
+coverage/
+.nyc_output/
+node_modules/.cache/
+
+# Cargo.lock 是应用锁文件，必须保留；native/Cargo.lock 也保留。

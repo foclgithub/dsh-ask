@@ -1,0 +1,6 @@
+# Inserts the loopback bridge row. The plugin serves /local-cli/health and
+# /local-cli/ask on the Host's own listener; `dsh-ask` reads the endpoint and
+# token files under $DSH_HOME/local-cli.
+- insert:
+    - id: local-cli
+      name: '@local/dsh-local-cli'
